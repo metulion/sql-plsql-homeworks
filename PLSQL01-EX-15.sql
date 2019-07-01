@@ -1,0 +1,6 @@
+CREATE OR REPLACE PROCEDURE print_day IS
+BEGIN
+   DBMS_OUTPUT.put_line (TO_CHAR (LOCALTIMESTAMP, 'Day'));
+END;
+/
+EXECUTE print_day;
